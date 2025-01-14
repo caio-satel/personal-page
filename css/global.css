@@ -1,5 +1,7 @@
 @import '../css/utilities/color.css';
+@import '../css/utilities/tipografia.css';
 
+/* Resetando config padrão do navegador */
 * {
     box-sizing: border-box;
     padding: 0;
