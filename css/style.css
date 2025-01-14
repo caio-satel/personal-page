@@ -1,6 +1,8 @@
+/* Header */
+@import url('../css/header/header.css');
+
 /* Utilities */
 @import url('../css/utilities/color.css');
-@import url('../css/utilities/tipografia.css');
 
 /* Resetando config padrão do navegador */
 * {
@@ -10,7 +12,7 @@
 }
 /* Padrão de fonte caso a fonte principal não carregue */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Raleway", Helvetica, sans-serif;
     color: var(--color-c9);
 }
 ul {
