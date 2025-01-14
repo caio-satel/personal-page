@@ -1,0 +1,82 @@
+:root {
+    /* Primary Color */
+    --color-c1: #F8F9FA;
+    --color-c2: #E9ECEF;
+    --color-c3: #DEE2E6;
+    --color-c4: #CED4DA;
+    --color-c5: #ADB5BD;
+    --color-c6: #6C757D;
+    --color-c7: #495057;
+    --color-c8: #343A40;
+    --color-c9: #212529;
+
+    /* Secondary Color */
+    --color-v1: #D8F3DC;
+    --color-v2: #B7E4C7;
+    --color-v3: #95D5B2;
+    --color-v4: #74C69D;
+    --color-v5: #52B788;
+    --color-v6: #40916C;
+    --color-v7: #2D6A4F;
+    --color-v8: #1B4332;
+    --color-v9: #081C15;
+
+    /* CLASS FONT COLOR */
+    /* Primary */
+    .color-c1 {
+        color: var(--color-c1);
+    }
+    .color-c2 {
+        color: var(--color-c2);
+    }
+    .color-c3 {
+        color: var(--color-c3);
+    }
+    .color-c4 {
+        color: var(--color-c4);
+    }
+    .color-c5 {
+        color: var(--color-c5);
+    }
+    .color-c6 {
+        color: var(--color-c6);
+    }
+    .color-c7 {
+        color: var(--color-c7);
+    }
+    .color-c8 {
+        color: var(--color-c8);
+    }
+    .color-c9 {
+        color: var(--color-c9);
+    }
+
+    /* Secondary */
+    .color-v1 {
+        color: var(--color-v1);
+    }
+    .color-v2 {
+        color: var(--color-v2);
+    }
+    .color-v3 {
+        color: var(--color-v3);
+    }
+    .color-v4 {
+        color: var(--color-v4);
+    }
+    .color-v5 {
+        color: var(--color-v5);
+    }
+    .color-v6 {
+        color: var(--color-v6);
+    }
+    .color-v7 {
+        color: var(--color-v7);
+    }
+    .color-v8 {
+        color: var(--color-v8);
+    }
+    .color-v9 {
+        color: var(--color-v9);
+    }
+}
