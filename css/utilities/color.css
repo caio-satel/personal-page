@@ -11,15 +11,16 @@
     --color-c9: #212529;
 
     /* Secondary Color */
-    --color-v1: #D8F3DC;
-    --color-v2: #B7E4C7;
-    --color-v3: #95D5B2;
-    --color-v4: #74C69D;
-    --color-v5: #52B788;
-    --color-v6: #40916C;
-    --color-v7: #2D6A4F;
-    --color-v8: #1B4332;
-    --color-v9: #081C15;
+    --color-v1: #0466C8;
+    --color-v2: #0353A4;
+    --color-v3: #023E7D;
+    --color-v4: #002855;
+    --color-v5: #001845;
+    --color-v6: #001233;
+    --color-v7: #33415C;
+    --color-v8: #5C677D;
+    --color-v9: #7D8597;
+    --color-v10: #979DAC;
 
     /* CLASS FONT COLOR */
     /* Primary */
@@ -78,5 +79,8 @@
     }
     .color-v9 {
         color: var(--color-v9);
+    }
+    .color-v10 {
+        color: var(--color-v10);
     }
 }
