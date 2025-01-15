@@ -1,17 +1,23 @@
 .header-bg {
-    height: 100px;
-    padding: 0.7em;
-    background-color: #fff;
-}
-
-.header {
-    width: 90%;
-    height: 100%;
+    max-width: 2200px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-left: auto;
     margin-right: auto;
+    height: 80px;
+    background-color: var(--color-c1);
+}
+
+.section-header {
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.section-header nav {
+    display: flex;
+    gap: 20px;
 }
 
 .header-menu {
@@ -20,61 +26,53 @@
     gap: 20px;
 }
 
-#nav-projectlink {
-    cursor: pointer;
-    padding: 12px 0;
-    background-color: var(--color-v6);
-    box-shadow: 0 5px 5px 5px var(--color-v6);
-    animation: animate 5s ease-in-out infinite;
-    transition: all 1s ease-in-out;
+.header-menu2 {
+    display: flex;
+    gap: 20px;
 }
 
-@keyframes animate {
-    0%{
-        border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
-    }
-    50%{
-        border-radius: 30% 60% 70% 40%/ 30% 60% 30% 60%;
-    }
-    100%{
-        border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
-    }
-    
-}
-
-#nav-projectlink a {
-    color: var(--color-c1);
-}
-
-#nav-projectlink:hover {
-    background-color: var(--color-c2);
-}
-
-#nav-projectlink a:hover {
-    color: var(--color-v6);
-}
-
-.header-menu a{
-    padding: 10px 5px;
+.header-menu a,
+.header-menu2 a {
     font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-.header-menu .nav-link {
+.header-menu i {
+    font-size: 1.3rem;
+}
+
+.header-menu .nav-link,
+.header-menu2 .nav-link {
     position: relative;
 }
 
-.header-menu .nav-link:after{
+.header-menu .nav-link:after,
+.header-menu2 .nav-link:after {
     content: "";
     display: block;
-    height: 2px;
+    height: 1px;
     width: 0px;
-    background: var(--color-v9);
-    margin-top: 4px;
+    background: var(--color-a1);
+    margin-top: 2px;
     transition: 0.3s;
     position: absolute;
 }
 
-.header-menu .nav-link:hover::after {
+.header-menu .nav-link:hover::after,
+.header-menu2 .nav-link:hover::after {
     width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .header-menu a,
+    .header-menu2 a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-menu2 {
+        display: none;
+    }
 }

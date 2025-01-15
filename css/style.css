@@ -12,7 +12,7 @@
 }
 /* Padrão de fonte caso a fonte principal não carregue */
 body {
-    font-family: "Raleway", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     color: var(--color-c9);
 }
 ul {
