@@ -52,7 +52,7 @@
     display: block;
     height: 1px;
     width: 0px;
-    background: var(--color-a1);
+    background: var(--color-v1);
     margin-top: 2px;
     transition: 0.3s;
     position: absolute;
