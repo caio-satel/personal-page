@@ -1,0 +1,110 @@
+.welcome-bg {
+    max-width: 2200px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+}
+
+.welcome {
+    align-self: center;
+    margin: 50px 100px;
+}
+
+.welcome h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.welcome .text-developer {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.welcome .personal-description {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.welcome .btn-welcome {
+    cursor: pointer;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-top: 40px;
+    border-radius: 10rem;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.welcome .btn-welcome::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-v2);
+    border-radius: 10rem;
+    z-index: -2;    
+}
+
+.welcome .btn-welcome:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--color-v1);
+    border-radius: 10rem;
+    z-index: -1;
+    transition: all .3s;
+}
+
+.welcome .btn-welcome:hover {
+    color: #fff;
+}
+
+.welcome .btn-welcome:hover:before {
+    width: 100%;
+}
+
+.welcome-img {
+    object-fit: cover;
+    background: url(../../assets/imgs/img-profile.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 10px 10px 5px rgba(4, 102, 200, 0.5);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 5s ease-in-out;
+}
+
+@keyframes animate {
+    0%{
+        border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/ 50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+    }
+}
