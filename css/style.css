@@ -1,6 +1,9 @@
 /* Header */
 @import url('../css/header/header.css');
 
+/* Welcome */
+@import url('../css/welcome/welcome.css');
+
 /* Utilities */
 @import url('../css/utilities/color.css');
 
