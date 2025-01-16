@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 40px;
+    background-color: var(--color-c2);
 }
 
 .welcome {
@@ -39,8 +40,8 @@
     margin-top: 40px;
     border-radius: 10rem;
     border: none;
-    color: #fff;
-    text-transform: uppercase;
+    color: var(--color-c1);
+    font-family: 'Cooper Hewitt', Helvetica, sans-serif;
     font-size: 1rem;
     letter-spacing: .15rem;
     transition: all .3s;
@@ -75,7 +76,7 @@
 }
 
 .welcome .btn-welcome:hover {
-    color: #fff;
+    color: var(--color-c1);
 }
 
 .welcome .btn-welcome:hover:before {
