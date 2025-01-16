@@ -4,6 +4,9 @@
 /* Welcome */
 @import url('../css/welcome/welcome.css');
 
+/* Carrossel */
+@import url('../css/carrossel/carrossel.css');
+
 /* Utilities */
 @import url('../css/utilities/color.css');
 
