@@ -1,0 +1,99 @@
+.projects-bg {
+    display: grid;
+    place-items: center;
+    padding-block: 5rem;
+    background-color: var(--color-c1);
+}
+
+.projects-bg h1 {
+    font-family: 'Cooper Hewitt';
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--color-v1);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3.5rem;
+}
+
+.project-card {
+    position: relative;
+}
+
+.project-card h3 {
+    font-family: 'Cooper Hewitt';
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-v2);
+    margin-bottom: 1rem;
+}
+
+.project-card img {
+    width: 100%;
+    height: 320px; 
+    object-fit: cover;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 24px rgba(4, 102, 200, 0.5);
+}
+
+.card-infos {
+    width: 400px;
+    background-color: var(--color-c1);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card-description {
+    display: inline-block;
+    font-size: .813rem;
+    padding: 5px;
+    background-color: var(--color-c2);
+    color: var(--color-c9);
+    border-radius: 5px;
+    margin-bottom: .25rem;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-c9);
+    margin: .75rem 0;
+}
+
+.card-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-v1);
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.project-card:hover .card-infos {
+    animation: show-infos 2s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+@keyframes show-infos {
+    50% {
+        transform: translateY(-7rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
+}
