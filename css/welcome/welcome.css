@@ -4,16 +4,15 @@
     padding-right: 40px;
     margin-left: auto;
     margin-right: auto;
-    height: 600px;
+    height: calc(100vh - 80px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 40px;
-    background-color: var(--color-c2);
+    background-color: var(--color-c1);
 }
 
 .welcome {
-    align-self: center;
-    margin: 50px 100px;
+    margin: 150px 50px;
 }
 
 .welcome h1 {
@@ -36,6 +35,7 @@
 }
 
 .welcome .btn-welcome {
+    width: max-content;
     cursor: pointer;
     display: block;
     padding: .75rem 1.25rem;
@@ -91,9 +91,9 @@
     background-position: center center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    width: 500px;
-    height: 500px;
+    margin-top: 100px;
+    width: 550px;
+    height: 550px;
     box-shadow: 0 10px 10px 5px rgba(4, 102, 200, 0.5);
     animation: animate 5s ease-in-out infinite;
     transition: all 5s ease-in-out;
