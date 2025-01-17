@@ -1,4 +1,8 @@
 .welcome-bg {
+    background-color: var(--color-c8);
+}
+
+.welcome-content {
     max-width: 2200px;
     padding: 50px;
     margin-left: auto;
@@ -6,7 +10,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0px 40px;
-    background-color: var(--color-c1);
 }
 
 .welcome {
@@ -33,11 +36,9 @@
 }
 
 .welcome .btn-welcome {
-    max-width: 300px;
     cursor: pointer;
     display: block;
     padding: .75rem 1.25rem;
-    margin-top: 40px;
     border-radius: 10rem;
     border: none;
     color: var(--color-c1);
@@ -48,6 +49,16 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+}
+
+.welcome #btn-projects {
+    max-width: 300px;
+    margin-top: 40px;
+}
+
+.welcome #btn-cv {
+    max-width: 160px;
+    margin-top: 10px;
 }
 
 .welcome .btn-welcome::after {
@@ -184,7 +195,7 @@
 }
 
 @media (max-width: 600px) {
-    .welcome-bg {
+    .welcome-content {
         grid-template-columns: 1fr;
         padding: 20px;
     }
