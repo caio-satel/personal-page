@@ -1,18 +1,16 @@
 .welcome-bg {
     max-width: 2200px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 50px;
     margin-left: auto;
     margin-right: auto;
-    height: calc(100vh - 80px);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 0px 40px;
     background-color: var(--color-c1);
 }
 
 .welcome {
-    margin: 150px 50px;
+    padding: 40px 20px;
 }
 
 .welcome h1 {
@@ -35,7 +33,7 @@
 }
 
 .welcome .btn-welcome {
-    width: max-content;
+    max-width: 300px;
     cursor: pointer;
     display: block;
     padding: .75rem 1.25rem;
@@ -44,6 +42,7 @@
     border: none;
     color: var(--color-c1);
     font-size: 1rem;
+    text-align: center;
     letter-spacing: .15rem;
     transition: all .3s;
     position: relative;
@@ -91,12 +90,11 @@
     background-position: center center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    width: 550px;
-    height: 550px;
+    width: 500px;
+    height: 500px;
     box-shadow: 0 10px 10px 5px rgba(4, 102, 200, 0.5);
     animation: animate 5s ease-in-out infinite;
-    transition: all 5s ease-in-out;
+    transition: all .8s ease-in-out;
 }
 
 @keyframes animate {
@@ -108,5 +106,93 @@
     }
     100%{
         border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+    }
+}
+
+/* Responsive */
+@media (max-width: 1300px) {
+    .welcome {
+        padding-top: 30px;
+    }
+    .welcome h1 {
+        font-size: 3rem;
+    }
+    .welcome .text-developer {
+        font-size: 1.5rem;
+    }
+    .welcome-img {
+        width: 380px;
+        height: 380px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .welcome h1 {
+        font-size: 2.5rem;
+    }
+    .welcome .text-developer {
+        font-size: 1.5rem;
+    }
+    .welcome .personal-description {
+        font-size: 1.175rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .welcome .text-developer {
+        font-size: 1.2rem;
+    }
+    .welcome .personal-description {
+        font-size: 1rem;
+    }
+    .welcome-img {
+        width: 350px;
+        height: 350px;
+    }
+    .welcome .btn-welcome {
+        letter-spacing: .10rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .welcome-img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        padding: 20px 10px;
+    }
+    .welcome h1 {
+        font-size: 2rem;
+    }
+    .welcome .text-developer {
+        font-size: 1rem;
+    }
+    .welcome .personal-description {
+        font-size: 0.875rem;
+    }
+    .welcome-img {
+        width: 250px;
+        height: 250px;
+    }
+    .welcome .btn-welcome {
+        letter-spacing: 0rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .welcome-bg {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .welcome {
+        text-align: center;
+        order: 2;
+    }
+    .welcome .btn-welcome {
+        margin: 20px auto;
     }
 }
