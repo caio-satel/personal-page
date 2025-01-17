@@ -1,14 +1,14 @@
 .header-bg {
-    max-width: 2200px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-left: auto;
-    margin-right: auto;
     height: 80px;
     background-color: #FFF;
 }
 
 .section-header {
+    max-width: 2200px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
     display: flex;
     justify-content: flex-end;
