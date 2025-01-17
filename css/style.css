@@ -22,7 +22,7 @@
     padding: 0;
     margin: 0;
 }
-/* Padrão de fonte caso a fonte principal não carregue */
+/* Padrão de fonte para titulos e subtitulos */
 @font-face {
     font-family: 'Cooper Hewitt';
     src: url('../assets/fonts/CooperHewitt-Bold.woff');
@@ -65,9 +65,10 @@
     font-style: normal;
 }
 
-body {
+html, body {
     font-family: "Fira Sans", Arial, sans-serif;
     color: var(--color-c9);
+    overflow-x: hidden;
 }
 ul {
     list-style: none;
