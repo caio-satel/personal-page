@@ -84,6 +84,10 @@
     margin-bottom: 32px;
 }
 
+.projects-card p span {
+    color: var(--color-c9);
+}
+
 .projects-card a {
     grid-column: 1 / -1;
     place-self: start;
@@ -181,6 +185,9 @@
     }
     .project-bg .projects-card h2 {
         color: var(--color-c9);
+    }
+    .project-bg .projects-card h2::before {
+        background-color: var(--color-v1);
     }
     .project-bg .projects-card p {
         color: var(--color-c9);
