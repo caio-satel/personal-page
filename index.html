@@ -193,13 +193,16 @@
             <section class="section-contact" id="contact">
                 <h2 class="color-c1">Entre em contato</h2>
                 <p class="color-c3">Mande uma mensagem para nós conversarmos e achar soluções para suas necessidades</p>
-                <form id="form-contact">
+                <form action="https://api.staticforms.xyz/submit" method="post" id="form-contact">
+                    <input type="hidden" name="accessKey" value="20c9df8e-b60d-48a5-9f60-6a54f44d0f68">
                     <label for="name"></label>
-                    <input type="text" name="name" id="name" placeholder="Seu nome" required>
+                    <input type="text" name="name" id="name" placeholder="Seu nome" autocomplete="off" required>
                     <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
-                    <textarea name="message" id="message" placeholder="Digite sua mensagem" required></textarea>
-                    <button type="submit" class="btn-form">Vamos conversar!</button>
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail" autocomplete="off" required>
+                    <textarea name="message" id="message" placeholder="Digite sua mensagem" autocomplete="off" required></textarea>
+                    <input type="hidden" name="redirectTo" value="./dialog.html">
+                    <input type="text" name="honeypot" style="display: none;">
+                    <button type="submit" value="submit" class="btn-form">Vamos conversar!</button>
                 </form>
             </section>
         </main>
