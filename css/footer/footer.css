@@ -1,0 +1,120 @@
+.footer-bg {
+    background-color: var(--color-c1);
+}
+
+.nav-footer {
+    max-width: 2200px;
+    margin: 0 20px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-footer #logo {
+    height: max-content;
+    font-family: 'Cooper Hewitt';
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--color-c9);
+}
+
+.nav-footer #logo span {
+    font-size: 1.2rem;
+}
+
+.nav-content {
+    display: flex;
+    gap: 60px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.social-nav li::after {
+    content: "";
+    display: block;
+    max-width: 360px;
+    height: 2px;
+    background: var(--color-c2);
+    margin-top: 8px;
+}
+
+.social-nav h1 {
+    font-family: 'Cooper Hewitt';
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--color-c9);
+}
+
+.social-nav li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.social-nav li a:hover {
+    color: var(--color-v6);
+}
+
+.social-nav li a {
+    display: flex;
+    align-items: center;
+}
+
+.social-nav li i {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.footer-nav h1 {
+    font-family: 'Cooper Hewitt';
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--color-c9);
+}
+
+.footer-nav li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer-nav li a:hover {
+    color: var(--color-v6);
+}
+
+.footer-nav li::after {
+    content: "";
+    display: block;
+    max-width: 360px;
+    height: 2px;
+    background: var(--color-c2);
+    margin-top: 6px;
+}
+
+.footer-text {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .nav-content {
+        justify-content: space-around;
+        gap: 40px;
+        padding: 10px 20px;
+    }
+    .social-nav h1,
+    .footer-nav h1 {
+        font-size: 1rem;
+    }
+    .social-nav li,
+    .footer-nav li {
+        font-size: 0.9rem;
+    }
+    .nav-footer {
+        flex-direction: column;
+    }
+}
