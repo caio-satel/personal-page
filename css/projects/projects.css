@@ -1,5 +1,5 @@
 .project-bg {
-    background: linear-gradient(to right, var(--color-c1) 30%, var(--color-v1) 0%);
+    background: linear-gradient(to right, var(--color-c1) 30%, var(--color-c9) 0%);
 }
 
 .projects-container {
@@ -22,8 +22,13 @@
     padding: 60px 40px;
 }
 
-.projects-card:hover {
-    scale: 1.04;
+.projects-card::after {
+    content: "";
+    display: block;
+    max-width: 90%;
+    height: 2px;
+    background: var(--color-c3);
+    margin-top: 8px;
 }
 
 .project-image {
@@ -36,16 +41,16 @@
     height: 400px;
     object-fit: cover;
     border-radius: 5px;
-    box-shadow: 0 8px 24px var(--color-c6);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .project-image span {
     grid-area: 1/1;
     place-self: start end;
-    margin-top: 20px;
+    margin-top: 40px;
     display: inline-block;
     background: var(--color-v2);
-    padding: 8px 8px 8px 8px;
+    padding: 8px 10px 8px 8px;
     border-radius: 4px 0 0 4px;
     font-weight: 500;
 }
@@ -81,17 +86,17 @@
 }
 
 .projects-card p {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .projects-card p span {
-    color: var(--color-c9);
+    color: var(--color-v1);
 }
 
 .projects-card a {
     grid-column: 1 / -1;
     place-self: start;
-    margin-top: 50px;
+    margin-top: 30px;
     background-color: var(--color-v1);
     color: var(--color-c1);
     display: block;
